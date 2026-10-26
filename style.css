@@ -47,5 +47,9 @@
 .dialog-description{justify-content:flex-end}
 
 /* Paper presentation comes first; the obsolete montage has been removed. */
-.paper-presentation{padding:70px 0}.presentation-player{aspect-ratio:16/9;border:1px solid #ffffff22;border-radius:12px;overflow:hidden;background:#080e15}.presentation-player video{display:block;width:100%;height:100%;object-fit:contain}.paper-presentation .text-link{color:#b9e3d9}.demo-thumbnail{aspect-ratio:16/9}.demo-thumbnail>img,.demo-thumbnail>video{object-fit:contain}
-@media(max-width:600px){.paper-presentation{padding:48px 0}.presentation-player{border-radius:7px}.demo-thumbnail{aspect-ratio:16/9}}
+.paper-presentation{padding:70px 0}.paper-presentation .compact-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:32px}.paper-presentation .compact-heading h2{font-size:42px}.paper-presentation .compact-heading .eyebrow{margin-bottom:12px}.presentation-player{aspect-ratio:16/9;border:1px solid #ffffff22;border-radius:12px;overflow:hidden;background:#080e15}.presentation-player video{display:block;width:100%;height:100%;object-fit:contain}.paper-presentation .text-link{color:#b9e3d9}.demo-thumbnail{aspect-ratio:16/9}.demo-thumbnail>img,.demo-thumbnail>video{object-fit:contain}
+@media(max-width:600px){.paper-presentation{padding:48px 0}.paper-presentation .compact-heading{display:block;margin-bottom:22px}.paper-presentation .compact-heading h2{font-size:35px}.paper-presentation .compact-heading>.text-link{margin-top:16px}.presentation-player{border-radius:7px}.demo-thumbnail{aspect-ratio:16/9}}
+
+/* Make the curated demo heading the second visual anchor after the presentation. */
+.demos .section-heading{grid-template-columns:1.35fr 1fr;gap:60px}.demos .section-heading h2{font-size:clamp(48px,4.8vw,68px);line-height:1.06}
+@media(max-width:600px){.demos .section-heading{grid-template-columns:1fr;gap:24px}.demos .section-heading h2{font-size:clamp(43px,11.4vw,60px)}}
