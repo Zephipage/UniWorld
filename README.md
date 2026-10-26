@@ -18,11 +18,9 @@ python scripts/serve.py --port 8787
 ## 当前内容
 
 - 主论文入口指向 [arXiv:2610.32381](https://arxiv.org/abs/2610.32381)，BibTeX 包含 arXiv 编号；本地 `assets/papers/paper.pdf` 用于论文图导出与方法、补充材料页码跳转。
-- 论文 Figure 1–5 直接从 PDF 渲染，保留原图内容；每张图均有 PNG 展示和矢量 PDF 下载。图像裁剪位置和文件哈希见 `verification/paper-figures.json`。
-- 7 段精选画廊视频，按城市场景、风景与室内、幻想世界、日常生活筛选；支持悬停预览、弹窗、前后切换、下载。
-- DMD250 视频从 `/data/zx/MiniMax/outputs` 的候选中选取，并加入以下两个目录各 3 个场景的视频：
-  - `/data/zx/MiniMax/thirdparty/SMD/outputs/h3_union_three_examples_14s_20261022`
-  - `/data/zx/MiniMax/thirdparty/SMD/outputs/h3_union_teacher40_three_14s_20261022`
+- 论文 Figure 1–5 直接从 PDF 渲染，保留原图内容；每张图均有 PNG 展示和矢量 PDF 下载。图像裁剪位置和文件哈希保存在本地维护目录 `verification/paper-figures.json`。
+- 10 段精选画廊视频，按城市场景、风景与室内、幻想世界、日常生活筛选；支持悬停预览、弹窗、前后切换、下载。
+- 画廊包含 `/data/zx/MiniMax/outputs` 的八段 DMD250 样例，以及 `/data/zx/MiniMax/thirdparty/SMD/outputs/h3_union_three_examples_14s_20261022` 的两段场景视频。
 - 画廊展示单路视频；页面不展示模型、检查点、实验目录或来源标注。原始路径及导出记录仅保存在本地维护文件中。
 - 论文展示视频放在封面之后，使用原始 1920×1080 版本并保留音轨。
 - 保留深度/RGB 同步对比、三路引擎控制演示和 60/120 秒完整长视频。

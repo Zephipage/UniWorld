@@ -26,6 +26,19 @@ window.UNIWORLD_MEDIA = {
     "src": "assets/media/tokyo.mp4",
     "poster": "assets/posters/tokyo.webp"
   },
+  "ancient-town": {
+    "id": "ancient-town",
+    "title": "A sunlit town",
+    "category": "city",
+    "collection": "gallery",
+    "width": 1024,
+    "height": 576,
+    "fps": "24/1",
+    "frames": 336,
+    "duration": 14.0,
+    "src": "assets/media/ancient-town.mp4",
+    "poster": "assets/posters/ancient-town.webp"
+  },
   "dome": {
     "id": "dome",
     "title": "Under the dome",
@@ -38,6 +51,32 @@ window.UNIWORLD_MEDIA = {
     "duration": 14.375,
     "src": "assets/media/dome.mp4",
     "poster": "assets/posters/dome.webp"
+  },
+  "forest-trail": {
+    "id": "forest-trail",
+    "title": "Through the forest",
+    "category": "landscapes",
+    "collection": "gallery",
+    "width": 1024,
+    "height": 576,
+    "fps": "24/1",
+    "frames": 336,
+    "duration": 14.0,
+    "src": "assets/media/forest-trail.mp4",
+    "poster": "assets/posters/forest-trail.webp"
+  },
+  "rome": {
+    "id": "rome",
+    "title": "Stone arches",
+    "category": "landscapes",
+    "collection": "gallery",
+    "width": 1024,
+    "height": 576,
+    "fps": "24/1",
+    "frames": 336,
+    "duration": 14.0,
+    "src": "assets/media/rome.mp4",
+    "poster": "assets/posters/rome.webp"
   },
   "palace": {
     "id": "palace",
