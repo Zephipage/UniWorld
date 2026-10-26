@@ -8,7 +8,7 @@
   <meta property="og:title" content="UniWorld — A Unified World Model">
   <meta property="og:description" content="From evolving geometry to continuous visual worlds. Explore depth-guided generation, appearance control, and long-horizon simulation.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://zephipage.github.io/UniWorld/assets/posters/forest.webp">
+  <meta property="og:image" content="https://zephipage.github.io/UniWorld/assets/posters/dome.webp">
   <meta property="og:url" content="https://zephipage.github.io/UniWorld/">
   <link rel="canonical" href="https://zephipage.github.io/UniWorld/">
   <meta name="citation_title" content="UniWorld: A Unified World Model for Real-Time Visual World Simulation">
@@ -38,7 +38,7 @@
     <a class="brand" href="#top" aria-label="UniWorld home"><svg class="brand-icon"><use href="#i-globe"/></svg><span>Uni<span class="brand-world">World</span></span></a>
     <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
     <nav id="navigation" aria-label="Main navigation">
-      <a href="#overview">Overview</a><a href="#demos">Demos</a><a href="#control">Control</a><a href="#continuation">Continuation</a><a href="#method">Method</a><a href="#results">Results</a>
+      <a href="#paper-demo">Presentation</a><a href="#demos">Demos</a><a href="#control">Control</a><a href="#continuation">Continuation</a><a href="#method">Method</a><a href="#results">Results</a>
     </nav>
     <a class="nav-paper" href="https://arxiv.org/abs/2610.32381" target="_blank" rel="noopener">Read the paper <svg><use href="#i-arrow"/></svg></a>
   </header>
@@ -56,11 +56,26 @@
         <div class="hero-actions">
           <a class="button button-cream" href="#demos"><svg><use href="#i-play"/></svg> Explore demos</a>
           <a class="button button-glass" href="https://arxiv.org/abs/2610.32381" target="_blank" rel="noopener"><svg><use href="#i-paper"/></svg> Paper</a>
-          <a class="button button-glass" href="#film"><svg><use href="#i-play"/></svg> Watch the film</a>
+          <a class="button button-glass" href="#paper-demo"><svg><use href="#i-play"/></svg> Presentation</a>
         </div>
-        <p class="hero-authors">Xin Zhang*, Yabo Chen*, Shuaiwei Wang, Zixuan Duan,<br>Haibin Huang, Feng Xu, Xuelong Li</p>
       </div>
       <div class="hero-bottom"><p>Depth sets the scene.<br><span>Reference sets the appearance.</span></p><a class="scroll-cue" href="#overview">Discover UniWorld <svg><use href="#i-down"/></svg></a><button class="motion-toggle" id="motion-toggle" aria-label="Pause background motion" aria-pressed="false"><svg><use href="#i-pause"/></svg></button></div>
+    </section>
+
+    <section class="section paper-presentation section-dark" id="paper-demo" aria-labelledby="paper-demo-title">
+      <div class="container">
+        <div class="compact-heading"><div><p class="eyebrow">Paper presentation</p><h2 id="paper-demo-title">UniWorld in action.</h2></div><a class="text-link" href="https://arxiv.org/abs/2610.32381" target="_blank" rel="noopener">Read the paper <svg><use href="#i-arrow"/></svg></a></div>
+        <div class="presentation-player"><video id="paper-presentation" controls playsinline preload="none" data-media="paper-presentation" aria-label="UniWorld paper presentation" width="1920" height="1080"></video></div>
+      </div>
+    </section>
+
+    <section class="section demos" id="demos" aria-labelledby="demos-title">
+      <div class="container wide">
+        <div class="section-heading"><div><p class="eyebrow">02 / Visual worlds</p><h2 id="demos-title">Different scenes.<br> <em>The same renderer.</em></h2></div><div class="heading-description"><p>Selected scenes with clear structure, detailed environments, and continuous motion.</p><p class="small-note">Hover to preview. Select a scene to watch the complete clip.</p></div></div>
+        <div class="gallery-toolbar"><div class="filters" role="group" aria-label="Filter demos by scene category"><button class="filter active" data-filter="all" aria-pressed="true">All worlds <span>7</span></button><button class="filter" data-filter="city" aria-pressed="false">City scenes <span>2</span></button><button class="filter" data-filter="landscapes" aria-pressed="false">Landscapes &amp; interiors <span>1</span></button><button class="filter" data-filter="fantasy" aria-pressed="false">Imagined worlds <span>2</span></button><button class="filter" data-filter="life" aria-pressed="false">Everyday life <span>2</span></button></div><span class="gallery-count" id="gallery-count" aria-live="polite">7 scenes</span></div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+        <noscript><p>Enable JavaScript to browse the interactive demos, or <a href="https://arxiv.org/abs/2610.32381">read the paper</a>.</p></noscript>
+      </div>
     </section>
 
     <section class="section overview" id="overview" aria-labelledby="overview-title">
@@ -79,22 +94,7 @@
       </div>
     </section>
 
-    <section class="film-section section-dark" id="film" aria-labelledby="film-title">
-      <div class="container">
-        <div class="compact-heading"><div><p class="eyebrow">UniWorld, in motion</p><h2 id="film-title">Watch the film.</h2></div><span class="small-note">Project overview & selected demonstrations</span></div>
-        <div class="film-shell"><video id="project-film" controls playsinline preload="none" poster="assets/posters/film.webp" data-media="film" aria-label="UniWorld project presentation"></video></div>
-        <p class="film-caption">A selection of worlds in motion. Explore the complete videos below.</p>
-      </div>
-    </section>
 
-    <section class="section demos" id="demos" aria-labelledby="demos-title">
-      <div class="container wide">
-        <div class="section-heading"><div><p class="eyebrow">02 / Visual worlds</p><h2 id="demos-title">Different scenes.<br> <em>The same renderer.</em></h2></div><div class="heading-description"><p>Explore city streets, open landscapes, everyday moments, and imagined worlds.</p><p class="small-note">Hover to preview. Select a scene to watch the complete clip.</p></div></div>
-        <div class="gallery-toolbar"><div class="filters" role="group" aria-label="Filter demos by scene category"><button class="filter active" data-filter="all" aria-pressed="true">All worlds <span>14</span></button><button class="filter" data-filter="city" aria-pressed="false">City scenes <span>2</span></button><button class="filter" data-filter="landscapes" aria-pressed="false">Landscapes &amp; interiors <span>4</span></button><button class="filter" data-filter="fantasy" aria-pressed="false">Imagined worlds <span>5</span></button><button class="filter" data-filter="life" aria-pressed="false">Everyday life <span>3</span></button></div><span class="gallery-count" id="gallery-count" aria-live="polite">14 scenes</span></div>
-        <div class="gallery-grid" id="gallery-grid"></div>
-        <noscript><p>Enable JavaScript to browse the interactive demos, or <a href="https://arxiv.org/abs/2610.32381">read the paper</a>.</p></noscript>
-      </div>
-    </section>
 
     <section class="section band" id="control" aria-labelledby="control-title">
       <div class="container">
@@ -155,19 +155,18 @@
       </div>
     </section>
 
-    <section class="section paper-section" id="paper" aria-labelledby="paper-title"><div class="container"><div class="paper-layout"><div><p class="eyebrow">Explore the work</p><h2 id="paper-title">A closer look<br> <em>at UniWorld.</em></h2><p class="paper-description">A Unified World Model for<br>Real-Time Visual World Simulation</p><p class="small-note">Xin Zhang*, Yabo Chen*, Shuaiwei Wang, Zixuan Duan,<br>Haibin Huang, Feng Xu, Xuelong Li<br><br>Fudan University · TeleAI, China Telecom · Jilin University · Nanjing University<br>* Equal contributions · Corresponding author: Xuelong Li</p><div class="paper-buttons"><a class="button button-dark" href="https://arxiv.org/abs/2610.32381" target="_blank" rel="noopener"><svg><use href="#i-paper"/></svg> Main paper <svg><use href="#i-arrow"/></svg></a><a class="button button-outline" href="assets/papers/paper.pdf#page=13" target="_blank" rel="noopener">Supplementary <svg><use href="#i-arrow"/></svg></a></div></div><div class="citation-box"><div><span class="tiny-label">BibTeX</span><button class="copy-button" id="copy-citation"><svg><use href="#i-copy"/></svg><span>Copy</span></button></div><pre id="bibtex">@misc{uniworld2026,
-  title = {UniWorld: A Unified World Model for
-           Real-Time Visual World Simulation},
-  author = {Zhang, Xin and Chen, Yabo and Wang, Shuaiwei and
-            Duan, Zixuan and Huang, Haibin and Xu, Feng and Li, Xuelong},
-  year = {2026},
-  eprint = {2610.32381},
-  archivePrefix = {arXiv},
-  url = {https://arxiv.org/abs/2610.32381}
+    <section class="section paper-section" id="paper" aria-labelledby="paper-title"><div class="container"><div class="paper-layout"><div><p class="eyebrow">Explore the work</p><h2 id="paper-title">A closer look<br> <em>at UniWorld.</em></h2><p class="paper-description">A Unified World Model for<br>Real-Time Visual World Simulation</p><div class="paper-buttons"><a class="button button-dark" href="https://arxiv.org/abs/2610.32381" target="_blank" rel="noopener"><svg><use href="#i-paper"/></svg> Main paper <svg><use href="#i-arrow"/></svg></a><a class="button button-outline" href="assets/papers/paper.pdf#page=13" target="_blank" rel="noopener">Supplementary <svg><use href="#i-arrow"/></svg></a></div></div><div class="citation-box"><div><span class="tiny-label">BibTeX</span><button class="copy-button" id="copy-citation"><svg><use href="#i-copy"/></svg><span>Copy</span></button></div><pre id="bibtex">@misc{zhang2026uniworldunifiedworldmodel,
+      title={UniWorld: A Unified World Model for Real-Time Visual World Simulation}, 
+      author={Xin Zhang and Yabo Chen and Shuaiwei Wang and Zixuan Duan and Haibin Huang and Feng Xu and Xuelong Li},
+      year={2026},
+      eprint={2610.32381},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2610.32381}, 
 }</pre><span id="copy-status" class="sr-only" role="status"></span></div></div></div></section>
   </main>
 
-  <footer><div class="container footer-top"><a class="brand" href="#top"><svg class="brand-icon"><use href="#i-globe"/></svg><span>UniWorld</span></a><p>From geometry to continuous visual worlds.</p><a href="#top">Back to top <svg><use href="#i-arrow"/></svg></a></div><div class="container footer-bottom"><p>© 2026 UniWorld authors</p><p>Design inspired by <a href="https://enderfga.cn/SolarRenderer/" target="_blank" rel="noopener">SolarRenderer</a>.</p></div></footer>
+  <footer><div class="container footer-top"><a class="brand" href="#top"><svg class="brand-icon"><use href="#i-globe"/></svg><span>UniWorld</span></a><p>From geometry to continuous visual worlds.</p><a href="#top">Back to top <svg><use href="#i-arrow"/></svg></a></div><div class="container footer-bottom"><p>© 2026 UniWorld</p></div></footer>
 
   <dialog class="demo-dialog" id="demo-dialog" aria-labelledby="dialog-title"><div class="dialog-heading"><div><span class="tiny-label" id="dialog-category"></span><h2 id="dialog-title"></h2></div><button class="dialog-close icon-button" id="dialog-close" aria-label="Close video"><svg><use href="#i-close"/></svg></button></div><video id="dialog-video" controls playsinline preload="metadata"></video><div class="dialog-description"><a id="dialog-download" download>Download clip <svg><use href="#i-down"/></svg></a></div><div class="dialog-footer"><span id="dialog-metadata"></span><div><button id="dialog-prev" aria-label="Previous demo">← Previous</button><button id="dialog-next" aria-label="Next demo">Next →</button></div></div></dialog>
 </body>

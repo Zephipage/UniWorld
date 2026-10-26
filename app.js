@@ -78,12 +78,12 @@
   headerTheme();
 
   // Cover mosaic. Only three short, low-resolution clips animate, and only on screen.
+  const heroClips = ['dome', 'heaven', 'tokyo'].filter(id => media[id]);
   const mosaicRows = [
-    ['winter', 'forest', 'city', 'saloon', 'river'],
-    ['saloon', 'heaven', 'oldtown', 'winter', 'bamboo'],
-    ['forest', 'winter', 'meadow', 'city', 'saloon'],
+    [heroClips[0], heroClips[1], heroClips[2], heroClips[0], heroClips[1]],
+    [heroClips[1], heroClips[2], heroClips[0], heroClips[1], heroClips[2]],
+    [heroClips[2], heroClips[0], heroClips[1], heroClips[2], heroClips[0]],
   ];
-  const heroClips = ['forest', 'heaven', 'city'];
   const mosaic = $('#hero-mosaic');
   mosaicRows.forEach((ids, rowIndex) => {
     const row = document.createElement('div');
