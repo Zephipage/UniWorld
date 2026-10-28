@@ -77,7 +77,7 @@
   window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(headerTheme); } }, {passive: true});
   headerTheme();
 
-  // Cover mosaic. Only three short, low-resolution clips animate, and only on screen.
+  // Cover mosaic. Short clips animate only while the cover is on screen.
   const heroClips = ['dome', 'heaven', 'tokyo'].filter(id => media[id]);
   const mosaicRows = [
     [heroClips[0], heroClips[1], heroClips[2], heroClips[0], heroClips[1]],
@@ -102,7 +102,7 @@
         video.loop = true;
         video.playsInline = true;
         video.preload = 'none';
-        video.dataset.src = `assets/media/hero-${id}.mp4`;
+        video.dataset.src = media[id].heroSrc || `assets/media/hero-${id}.mp4`;
         video.setAttribute('tabindex', '-1');
         video.addEventListener('playing', () => video.classList.add('is-playing'));
         tile.append(video);
